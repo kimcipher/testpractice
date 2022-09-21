@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALL BOUNCING</title>
+    <style>
+/* (top 0, left 0), (top 100% left 0px) ,(top 0, left 200px) (top 100%, left 200px)*/
+.object{
+            width: 150px;
+            height:150px ;
+            background-color: blue;
+            margin-top:20px ;
+            position: relative;
+            
+            animation-name: change;
+            animation-duration: 4s;
+            animation-iteration-count:infinite;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            /* animation-play-state: running; */
+            
+                    }
+body{
+
+            animation-name: body;
+            animation-duration: 4s;
+            animation-iteration-count:infinite;
+            
+            
+           
+            
+}
+    @keyframes body{
+        /* from{
+            background-image: url(images/pexels-pixabay-247502.jpg);
+        }
+        to{
+            background-image: url(images/pexels-pixabay-33152.jpg);
+        } */
+        0% {
+            background-image: url(images/pexels-christian-diokno-3186558.jpg );
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        25%{
+            background-image: url(images/pexels-thgusstavo-santana-1933873.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        50% {
+            background-image: url(images/pexels-mateus-souza-3586798.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        100%{
+            background-image: url(images/pexels-christian-diokno-3186558.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        }
+
+                    
+
+                    @keyframes change
+                    {
+                        0% {
+                            background-color: aqua; 
+                            top: 0px; 
+                            left: 0px;
+                        }
+                        15%{
+                            background-color: blue; 
+                            top: 600px; 
+                            left: 0px;
+                        }
+                        30%{
+                            background-color: purple; 
+                            left: 300px; 
+                            top: 0px;
+                        }
+                        45%{
+                            background-color: red;
+                            top: 600px; 
+                            left: 300px;
+                        }
+                        60%{
+                            background-color: rgb(255, 94, 0);
+                            top: 0px ;
+                            left: 600px;
+                        }
+                        75%{
+                            background-color: goldenrod; 
+                            top: 600px; 
+                            left: 600px;
+                        }
+                        90%{
+                            background-color: pink; 
+                            top: 0px; 
+                            left: 900px;
+                        }
+                        100%{
+                            background-color: aqua; 
+                            top: 0px; 
+                            left: 0px;
+                        }
+                      
+
+                    }
+
+
+    </style>
+</head>
+<body>
+    <div class="object">
+
+    </div>
+
+    
+</body>
+</html>
